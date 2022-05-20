@@ -9,7 +9,7 @@ http.createServer((req , res) =>{
 //Conteudo que deseja enviar: 
 switch(req.url){
     case'/':
-        res.end('index');
+        res.end("Ola mamae");
         break
     case '/contacto':
         res.end('Contacto');

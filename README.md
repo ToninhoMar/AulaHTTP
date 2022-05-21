@@ -17,6 +17,8 @@ writeHead = Escrever no Header
 "content-type";"text/html; charset = utf-8= tipo de texto que ira ser retornado para o servidor; 
 
 ==================================
+
+
 switch(req.url){
     case'/':
         res.end('index');
@@ -27,7 +29,12 @@ switch(req.url){
 
 caso de if com switch
 });
+
+
 ==================================
+
+
+
 
 }).listen(3030, "localhost");
 

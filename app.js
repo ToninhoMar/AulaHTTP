@@ -5,11 +5,20 @@
 const http =  require("http");
 const express = require('express');
 const app = express();
-app.get('/', (req,res)=> res.send("Ola Mundo!"))
+//adicionar metodo path para podermos enviar arquivos maiores: 
+const path = require('path');
 
-app.listen(3000,()=>{
-    console.log('Servidor Rodando!')
-});
+
+
+app.get('/', (req,res)=> res.send("Ola Mundo!"));
+
+
+//Resposta com /contacto:
+app.get('/contacto',(req,res)=>res.send({nome:'Antonio', idade: 21}));
+
+//rodando servidor com .app:
+app.listen(3000,()=>console.log('Servidor Rodando!'));
+
 
 
 
